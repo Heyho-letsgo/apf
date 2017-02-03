@@ -25,7 +25,7 @@
 	<div class="form-group">
 		<label for="somme">Somme</label>
 <p><input type="text" class="form-control" id="somme" value=""/></p>
-<label for="nbrSalarie">Nombre de salariés</label>
+<!-<label for="nbrSalarie">Nombre de salariés</label>
 <p><input type="text" id="nbrSalarie" class="form-control" placeholder="Nombre de Salarié" value=""/></p>
 <label for="pxHtContrat">Prix hors taxe de la facture</label>
 <p><input type="text" id="pxHtContrat" class="form-control" placeholder="Prix hors taxe de la facture" value=""/></p>
@@ -103,14 +103,14 @@
 	}	
 	//tout est ok
 	else
-	var calcul1 = (1.8*somme);//réponse 1
-	var calcul2 =(5700/2900)*calcul1;//réponse 2
-	var calcul3 = nbrSalarie *2//réponse 3 
+	// var calcul1 = (1.8*somme);//réponse 1
+	//var calcul2 =(5700/2900)*calcul1;//réponse 2
+	//var calcul3 = nbrSalarie *2//réponse 3 
 	var ub = pxHtContrat / (2000*9.76)//réponse ub
 
 	//Affiche le résultat dans "mon_div"
 	//Math.round() arrondit à l'entier le plus proche
-	document.getElementById('mon_div').innerHTML = 'UB : '+Math.round(ub)+''; 
+	document.getElementById('mon_div').innerHTML = 'UB : '+ub.toFixed(2)+''; 
 }
 	
 </script>
